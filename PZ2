@@ -1,0 +1,9 @@
+#С начала суток прошло N секунд (N-целое). Найти количество полных минут, прошедших с начала последнего часа.
+try:
+        N = int(input("Введите кол-во секунд (целое число!): "))
+        if N > 0:
+            seconds_since_last_hour = N % 3600
+            full_minutes_since_last_hour = seconds_since_last_hour // 60
+except ValueError:
+    print("Число не может быть отрицательным!")
+print(f"Прошло {full_minutes_since_last_hour} минуты с начала последнего часа.")
