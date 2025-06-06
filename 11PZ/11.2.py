@@ -1,3 +1,5 @@
+# 2. Составить генератор (yield), который переведет 
+# символы строки из верхнего регистра в нижний.
 def lower_case_generator(input_string):
     for char in input_string:
         yield char.lower()
